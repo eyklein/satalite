@@ -98,7 +98,7 @@ function draw() {
     displayLastSatalite()
     
   }
-  displayLaunchingSatalite()
+  
   
   // translate(width/2,height/2)
   // text(mouseX +" : " + mouseY,50,50)
@@ -137,6 +137,7 @@ function draw() {
   image(traceGraphic,0,0);
   image(sataliteGraphic,0,0)
   image(explotionGraphic,0,0)
+  displayLaunchingSatalite()
   
   pop()
   
