@@ -42,7 +42,7 @@ function preload(){
   imgEarth=loadImage("img/earth.png");
   imgSatalite=loadImage("img/satalite.png");
  
-  myFont = loadFont('fonts/GamjaFlower-Regular.ttf');
+  myFont = loadFont('fonts/IndieFlower.ttf');
 }
 
 function setup() {
