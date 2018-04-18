@@ -150,7 +150,7 @@ function displayLastSatalite() {
   var verticalSpacing = 40;
   text("Time: " + floor(time / 60) + " minutes", 50, 50 + verticalSpacing * 0);
   text("Speed: " + floor(satalites[satalites.length - 1].speed.mag() / 100) / 10 + " km/s", 50, 50 + verticalSpacing * 1);
-  text("Altatude: " + floor((satalites[satalites.length - 1].possition.mag() - diamEarth / 2) / 100) / 10 + " km", 50, 50 + verticalSpacing * 2);
+  text("Altitude: " + floor((satalites[satalites.length - 1].possition.mag() - diamEarth / 2) / 100) / 10 + " km", 50, 50 + verticalSpacing * 2);
   var alt;
   if ((satalites[satalites.length - 1].possition.mag() < orbits[2]["alt-abs"])) {
     alt = orbits[2]["name"];
@@ -164,7 +164,7 @@ function displayLaunchingSatalite() {
   noStroke();
   fill(150);
   var verticalSpacing = 40;
-  text("Altatude: " + floor((dist(mouseX, mouseY, width / 2, height / 2) / distanceFactor - diamEarth / 2) / 100) / 10 + " km", 400, 50 + verticalSpacing * 0);
+  text("Altitude: " + floor((dist(mouseX, mouseY, width / 2, height / 2) / distanceFactor - diamEarth / 2) / 100) / 10 + " km", 400, 50 + verticalSpacing * 0);
   if (mouseIsPressed) {
     text("Speed: " + floor(sqrt(sq(pressedPossition.x - mouseX) + sq(pressedPossition.y - mouseY)) * 10) / 100 + " km/s", 400, 50 + verticalSpacing * 1);
 
@@ -178,7 +178,7 @@ function displayLaunchingSatalite() {
 
     //pressedPossition.x-mouseX,pressedPossition.y-mouseY);
   }
-  //text("Altatude: "+ floor((satalites[satalites.length-1].possition.mag()-diamEarth/2)/100)/10+" km",50,90);
+  //text("Altitude: "+ floor((satalites[satalites.length-1].possition.mag()-diamEarth/2)/100)/10+" km",50,90);
 }
 
 function paintAtmosphere() {
