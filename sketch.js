@@ -40,7 +40,7 @@ function preload() {
   imgEarth = loadImage("img/earth.png");
   imgSatalite = loadImage("img/satalite.png");
 
-  myFont = loadFont('fonts/indieflower.ttf');
+  myFont = loadFont('fonts/myfont.ttf');
 }
 
 function setup() {
