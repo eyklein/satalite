@@ -46,13 +46,13 @@ function preload() {
 function setup() {
   pixelDensity(1);
   createCanvas(windowWidth, windowHeight);
-  traceGraphic = createGraphics(1000, 1000);
+  traceGraphic = createGraphics(width, height);
   // mask=createGraphics(1000,1000);
   // mask.background(10);
   traceGraphic.translate(width / 2, height / 2);
-  sataliteGraphic = createGraphics(1000, 1000);
+  sataliteGraphic = createGraphics(width, height);
   sataliteGraphic.translate(width / 2, height / 2);
-  explotionGraphic = createGraphics(1000, 1000);
+  explotionGraphic = createGraphics(width, height);
   explotionGraphic.translate(width / 2, height / 2);
   //translate(width/2,height/2);
 
